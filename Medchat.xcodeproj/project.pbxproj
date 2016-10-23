@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092C84CCFCA64F20589433B3 /* Pods_Medchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C096DC8EB0B3FCE1976ACDFE /* Pods_Medchat.framework */; };
+		15F96B3F0FE5E304D6BDDF65 /* Pods_MedchatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D09A2C2B6B5AE9CF8902B61 /* Pods_MedchatTests.framework */; };
+		B6417A2D1458AEA825187179 /* Pods_MedchatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98AC414EABE38CFE1CCD963 /* Pods_MedchatUITests.framework */; };
+		BB0835A91D0DA4090081B1ED /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0835A81D0DA4090081B1ED /* TextViewController.swift */; };
+		BB22086D1CF20806004A31FF /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22086C1CF20806004A31FF /* MessageViewController.swift */; };
+		BB279C811D1443E6000196BE /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB279C801D1443E6000196BE /* HelpTableViewController.swift */; };
+		BB279C831D1489D8000196BE /* MedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB279C821D1489D8000196BE /* MedsTableViewCell.swift */; };
+		BB279C851D1489ED000196BE /* TreatmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB279C841D1489ED000196BE /* TreatmentTableViewCell.swift */; };
+		BB279C891D14C1E9000196BE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB279C881D14C1E9000196BE /* SWRevealViewController.m */; };
+		BB279C8B1D14F116000196BE /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB279C8A1D14F116000196BE /* ContactsTableViewController.swift */; };
+		BB279C8F1D14F944000196BE /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB279C8E1D14F944000196BE /* Contacts.swift */; };
+		BB29ECCE1CF0C58600BA4870 /* MyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECCD1CF0C58600BA4870 /* MyPlanViewController.swift */; };
+		BB29ECD01CF0CB1900BA4870 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECCF1CF0CB1900BA4870 /* ProfileViewController.swift */; };
+		BB29ECD21CF0E27C00BA4870 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECD11CF0E27C00BA4870 /* TabBarViewController.swift */; };
+		BB29ECD61CF106AA00BA4870 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECD51CF106AA00BA4870 /* InboxViewController.swift */; };
+		BB29ECD81CF11EE500BA4870 /* MyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECD71CF11EE500BA4870 /* MyMessage.swift */; };
+		BB29ECDC1CF15DBF00BA4870 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29ECDB1CF15DBF00BA4870 /* DataViewController.swift */; };
+		BB43F9611D1256B600F0A2AD /* StandardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43F9601D1256B600F0A2AD /* StandardTableViewController.swift */; };
+		BB4E8CFC1D08A8610030725E /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E8CFB1D08A8610030725E /* MessageCell.swift */; };
+		BB4E8CFE1D08E8C50030725E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E8CFD1D08E8C50030725E /* CoreDataStack.swift */; };
+		BB4E8D031D08EA130030725E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB4E8D011D08EA130030725E /* Model.xcdatamodeld */; };
+		BB4E8D111D0930E10030725E /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E8D0F1D0930E10030725E /* Content+CoreDataProperties.swift */; };
+		BB4E8D121D0930E10030725E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E8D101D0930E10030725E /* Content.swift */; };
+		BB5E88D41D20619600548FC2 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E88D31D20619600548FC2 /* CameraDelegate.swift */; };
+		BB7BE0871D0CAB2F00A3A300 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE0861D0CAB2F00A3A300 /* PhoneViewController.swift */; };
+		BB7BE0891D0CC45F00A3A300 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE0881D0CC45F00A3A300 /* NotificationsViewController.swift */; };
+		BB7BE08B1D0CC7BA00A3A300 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE08A1D0CC7BA00A3A300 /* NotificationsCell.swift */; };
+		BB93E96D1D077C840006C3B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93E96C1D077C840006C3B1 /* Constants.swift */; };
+		BB93E96F1D0788C50006C3B1 /* MedchatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93E96E1D0788C50006C3B1 /* MedchatClient.swift */; };
+		BB963CD31D1872DA009FE24D /* CameraCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB963CD21D1872DA009FE24D /* CameraCaptureViewController.swift */; };
+		BBCED5371CEF84F800F0581B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCED5361CEF84F800F0581B /* AppDelegate.swift */; };
+		BBCED5391CEF84F800F0581B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCED5381CEF84F800F0581B /* ChatViewController.swift */; };
+		BBCED53C1CEF84F800F0581B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCED53A1CEF84F800F0581B /* Main.storyboard */; };
+		BBCED53E1CEF84F800F0581B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBCED53D1CEF84F800F0581B /* Assets.xcassets */; };
+		BBCED5411CEF84F800F0581B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCED53F1CEF84F800F0581B /* LaunchScreen.storyboard */; };
+		BBCED54C1CEF84F800F0581B /* MedchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCED54B1CEF84F800F0581B /* MedchatTests.swift */; };
+		BBCED5571CEF84F800F0581B /* MedchatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCED5561CEF84F800F0581B /* MedchatUITests.swift */; };
+		BBE37FC11D2F573A00B71E18 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE37FC01D2F573A00B71E18 /* Charts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBCED5481CEF84F800F0581B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBCED52B1CEF84F800F0581B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBCED5321CEF84F800F0581B;
+			remoteInfo = Medchat;
+		};
+		BBCED5531CEF84F800F0581B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBCED52B1CEF84F800F0581B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBCED5321CEF84F800F0581B;
+			remoteInfo = Medchat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D09A2C2B6B5AE9CF8902B61 /* Pods_MedchatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedchatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E1212811B1A5D397E8760A /* Pods-MedchatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedchatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedchatTests/Pods-MedchatTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F6F21C75B80B8468B341EB7 /* Pods-MedchatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedchatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedchatTests/Pods-MedchatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6473AF56848942B700FAFCD8 /* Pods-MedchatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedchatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedchatUITests/Pods-MedchatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75C2FD024E824CC691B3F119 /* Pods-MedchatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedchatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedchatUITests/Pods-MedchatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1F0BFFD377953EF3ECA9D0 /* Pods-Medchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Medchat/Pods-Medchat.debug.xcconfig"; sourceTree = "<group>"; };
+		A98AC414EABE38CFE1CCD963 /* Pods_MedchatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedchatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0835A81D0DA4090081B1ED /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		BB22086C1CF20806004A31FF /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		BB279C801D1443E6000196BE /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		BB279C821D1489D8000196BE /* MedsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsTableViewCell.swift; sourceTree = "<group>"; };
+		BB279C841D1489ED000196BE /* TreatmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatmentTableViewCell.swift; sourceTree = "<group>"; };
+		BB279C861D14C1E8000196BE /* Medchat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medchat-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB279C871D14C1E9000196BE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		BB279C881D14C1E9000196BE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		BB279C8A1D14F116000196BE /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		BB279C8E1D14F944000196BE /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		BB29ECCD1CF0C58600BA4870 /* MyPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlanViewController.swift; sourceTree = "<group>"; };
+		BB29ECCF1CF0CB1900BA4870 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB29ECD11CF0E27C00BA4870 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BB29ECD51CF106AA00BA4870 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxViewController.swift; path = ../InboxViewController.swift; sourceTree = "<group>"; };
+		BB29ECD71CF11EE500BA4870 /* MyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessage.swift; sourceTree = "<group>"; };
+		BB29ECDB1CF15DBF00BA4870 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = ../DataViewController.swift; sourceTree = "<group>"; };
+		BB43F9601D1256B600F0A2AD /* StandardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTableViewController.swift; sourceTree = "<group>"; };
+		BB4E8CFB1D08A8610030725E /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BB4E8CFD1D08E8C50030725E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = SOURCE_ROOT; };
+		BB4E8D021D08EA130030725E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BB4E8D0E1D092E8D0030725E /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
+		BB4E8D0F1D0930E10030725E /* Content+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB4E8D101D0930E10030725E /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		BB5E88D31D20619600548FC2 /* CameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDelegate.swift; sourceTree = "<group>"; };
+		BB7BE0861D0CAB2F00A3A300 /* PhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
+		BB7BE0881D0CC45F00A3A300 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		BB7BE08A1D0CC7BA00A3A300 /* NotificationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
+		BB93E96C1D077C840006C3B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB93E96E1D0788C50006C3B1 /* MedchatClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedchatClient.swift; sourceTree = "<group>"; };
+		BB963CD21D1872DA009FE24D /* CameraCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCaptureViewController.swift; sourceTree = "<group>"; };
+		BBCED5331CEF84F800F0581B /* Medchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCED5361CEF84F800F0581B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBCED5381CEF84F800F0581B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BBCED53B1CEF84F800F0581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBCED53D1CEF84F800F0581B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBCED5401CEF84F800F0581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBCED5421CEF84F800F0581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Medchat/Info.plist; sourceTree = "<group>"; };
+		BBCED5471CEF84F800F0581B /* MedchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCED54B1CEF84F800F0581B /* MedchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedchatTests.swift; sourceTree = "<group>"; };
+		BBCED54D1CEF84F800F0581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCED5521CEF84F800F0581B /* MedchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCED5561CEF84F800F0581B /* MedchatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedchatUITests.swift; sourceTree = "<group>"; };
+		BBCED5581CEF84F800F0581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE37FC01D2F573A00B71E18 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Users/sriharimohan/Library/Developer/Xcode/DerivedData/Medchat-gtluiegjgnbicvhaiuauuojjdbee/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
+		C096DC8EB0B3FCE1976ACDFE /* Pods_Medchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CD4C5B05AFA8C5E683E58 /* Pods-Medchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Medchat/Pods-Medchat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBCED5301CEF84F800F0581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE37FC11D2F573A00B71E18 /* Charts.framework in Frameworks */,
+				092C84CCFCA64F20589433B3 /* Pods_Medchat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED5441CEF84F800F0581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F96B3F0FE5E304D6BDDF65 /* Pods_MedchatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED54F1CEF84F800F0581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6417A2D1458AEA825187179 /* Pods_MedchatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB4E8D0A1D0923860030725E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED53A1CEF84F800F0581B /* Main.storyboard */,
+				BBCED53F1CEF84F800F0581B /* LaunchScreen.storyboard */,
+				BB4E8CFB1D08A8610030725E /* MessageCell.swift */,
+				BB7BE08A1D0CC7BA00A3A300 /* NotificationsCell.swift */,
+				BB279C821D1489D8000196BE /* MedsTableViewCell.swift */,
+				BB279C841D1489ED000196BE /* TreatmentTableViewCell.swift */,
+				BB279C8E1D14F944000196BE /* Contacts.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB4E8D0B1D0924270030725E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB29ECD11CF0E27C00BA4870 /* TabBarViewController.swift */,
+				BB29ECDB1CF15DBF00BA4870 /* DataViewController.swift */,
+				BB29ECCD1CF0C58600BA4870 /* MyPlanViewController.swift */,
+				BB22086C1CF20806004A31FF /* MessageViewController.swift */,
+				BB29ECCF1CF0CB1900BA4870 /* ProfileViewController.swift */,
+				BB0835A81D0DA4090081B1ED /* TextViewController.swift */,
+				BB7BE0881D0CC45F00A3A300 /* NotificationsViewController.swift */,
+				BB29ECD51CF106AA00BA4870 /* InboxViewController.swift */,
+				BB7BE0861D0CAB2F00A3A300 /* PhoneViewController.swift */,
+				BB43F9601D1256B600F0A2AD /* StandardTableViewController.swift */,
+				BB279C801D1443E6000196BE /* HelpTableViewController.swift */,
+				BB279C8A1D14F116000196BE /* ContactsTableViewController.swift */,
+				BB963CD21D1872DA009FE24D /* CameraCaptureViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BB4E8D0C1D0924710030725E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB5E88D31D20619600548FC2 /* CameraDelegate.swift */,
+				BBCED5361CEF84F800F0581B /* AppDelegate.swift */,
+				BB93E96C1D077C840006C3B1 /* Constants.swift */,
+				BB93E96E1D0788C50006C3B1 /* MedchatClient.swift */,
+				BB29ECD71CF11EE500BA4870 /* MyMessage.swift */,
+				BB279C881D14C1E9000196BE /* SWRevealViewController.m */,
+				BB279C861D14C1E8000196BE /* Medchat-Bridging-Header.h */,
+				BB279C871D14C1E9000196BE /* SWRevealViewController.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB4E8D0D1D09247A0030725E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED5381CEF84F800F0581B /* ChatViewController.swift */,
+				BB4E8CFD1D08E8C50030725E /* CoreDataStack.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		BBCED52A1CEF84F800F0581B = {
+			isa = PBXGroup;
+			children = (
+				BB4E8D011D08EA130030725E /* Model.xcdatamodeld */,
+				BB4E8D0F1D0930E10030725E /* Content+CoreDataProperties.swift */,
+				BB4E8D101D0930E10030725E /* Content.swift */,
+				BBCED5421CEF84F800F0581B /* Info.plist */,
+				BBCED54A1CEF84F800F0581B /* MedchatTests */,
+				BBCED5551CEF84F800F0581B /* MedchatUITests */,
+				BBCED5341CEF84F800F0581B /* Products */,
+				BBCED5351CEF84F800F0581B /* Medchat */,
+				DA810F4C09F65AA689D72114 /* Pods */,
+				D7139A42559E3C8E3E6842DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBCED5341CEF84F800F0581B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED5331CEF84F800F0581B /* Medchat.app */,
+				BBCED5471CEF84F800F0581B /* MedchatTests.xctest */,
+				BBCED5521CEF84F800F0581B /* MedchatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBCED5351CEF84F800F0581B /* Medchat */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED53D1CEF84F800F0581B /* Assets.xcassets */,
+				BB4E8D0A1D0923860030725E /* View */,
+				BB4E8D0C1D0924710030725E /* Model */,
+				BB4E8D0D1D09247A0030725E /* Core Data */,
+				BB4E8D0B1D0924270030725E /* Controller */,
+			);
+			path = Medchat;
+			sourceTree = "<group>";
+		};
+		BBCED54A1CEF84F800F0581B /* MedchatTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED54B1CEF84F800F0581B /* MedchatTests.swift */,
+				BBCED54D1CEF84F800F0581B /* Info.plist */,
+			);
+			path = MedchatTests;
+			sourceTree = "<group>";
+		};
+		BBCED5551CEF84F800F0581B /* MedchatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBCED5561CEF84F800F0581B /* MedchatUITests.swift */,
+				BBCED5581CEF84F800F0581B /* Info.plist */,
+			);
+			path = MedchatUITests;
+			sourceTree = "<group>";
+		};
+		D7139A42559E3C8E3E6842DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE37FC01D2F573A00B71E18 /* Charts.framework */,
+				C096DC8EB0B3FCE1976ACDFE /* Pods_Medchat.framework */,
+				3D09A2C2B6B5AE9CF8902B61 /* Pods_MedchatTests.framework */,
+				A98AC414EABE38CFE1CCD963 /* Pods_MedchatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA810F4C09F65AA689D72114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E1F0BFFD377953EF3ECA9D0 /* Pods-Medchat.debug.xcconfig */,
+				E42CD4C5B05AFA8C5E683E58 /* Pods-Medchat.release.xcconfig */,
+				5F6F21C75B80B8468B341EB7 /* Pods-MedchatTests.debug.xcconfig */,
+				47E1212811B1A5D397E8760A /* Pods-MedchatTests.release.xcconfig */,
+				75C2FD024E824CC691B3F119 /* Pods-MedchatUITests.debug.xcconfig */,
+				6473AF56848942B700FAFCD8 /* Pods-MedchatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBCED5321CEF84F800F0581B /* Medchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBCED55B1CEF84F800F0581B /* Build configuration list for PBXNativeTarget "Medchat" */;
+			buildPhases = (
+				59521A1685386242305B2994 /* [CP] Check Pods Manifest.lock */,
+				BBCED52F1CEF84F800F0581B /* Sources */,
+				BBCED5301CEF84F800F0581B /* Frameworks */,
+				BBCED5311CEF84F800F0581B /* Resources */,
+				8F27A9B1A581E5C2C5446F2B /* [CP] Embed Pods Frameworks */,
+				CE58E1A49CA0CB4E86E76428 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medchat;
+			productName = Medchat;
+			productReference = BBCED5331CEF84F800F0581B /* Medchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBCED5461CEF84F800F0581B /* MedchatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBCED55E1CEF84F800F0581B /* Build configuration list for PBXNativeTarget "MedchatTests" */;
+			buildPhases = (
+				EED368932EC0871D20106EA1 /* [CP] Check Pods Manifest.lock */,
+				BBCED5431CEF84F800F0581B /* Sources */,
+				BBCED5441CEF84F800F0581B /* Frameworks */,
+				BBCED5451CEF84F800F0581B /* Resources */,
+				79AA5D48793FC7B91E446D43 /* [CP] Embed Pods Frameworks */,
+				8F5D7D841087F01ED1B30964 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBCED5491CEF84F800F0581B /* PBXTargetDependency */,
+			);
+			name = MedchatTests;
+			productName = MedchatTests;
+			productReference = BBCED5471CEF84F800F0581B /* MedchatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBCED5511CEF84F800F0581B /* MedchatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBCED5611CEF84F800F0581B /* Build configuration list for PBXNativeTarget "MedchatUITests" */;
+			buildPhases = (
+				706DC20509E45BC87332E854 /* [CP] Check Pods Manifest.lock */,
+				BBCED54E1CEF84F800F0581B /* Sources */,
+				BBCED54F1CEF84F800F0581B /* Frameworks */,
+				BBCED5501CEF84F800F0581B /* Resources */,
+				7366CA39636D124D9DB94774 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBCED5541CEF84F800F0581B /* PBXTargetDependency */,
+			);
+			name = MedchatUITests;
+			productName = MedchatUITests;
+			productReference = BBCED5521CEF84F800F0581B /* MedchatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBCED52B1CEF84F800F0581B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Srihari Mohan";
+				TargetAttributes = {
+					BBCED5321CEF84F800F0581B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MJ9RB8PF5D;
+					};
+					BBCED5461CEF84F800F0581B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BBCED5321CEF84F800F0581B;
+					};
+					BBCED5511CEF84F800F0581B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BBCED5321CEF84F800F0581B;
+					};
+				};
+			};
+			buildConfigurationList = BBCED52E1CEF84F800F0581B /* Build configuration list for PBXProject "Medchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBCED52A1CEF84F800F0581B;
+			productRefGroup = BBCED5341CEF84F800F0581B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBCED5321CEF84F800F0581B /* Medchat */,
+				BBCED5461CEF84F800F0581B /* MedchatTests */,
+				BBCED5511CEF84F800F0581B /* MedchatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBCED5311CEF84F800F0581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCED5411CEF84F800F0581B /* LaunchScreen.storyboard in Resources */,
+				BBCED53E1CEF84F800F0581B /* Assets.xcassets in Resources */,
+				BBCED53C1CEF84F800F0581B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED5451CEF84F800F0581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED5501CEF84F800F0581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59521A1685386242305B2994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		706DC20509E45BC87332E854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7366CA39636D124D9DB94774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedchatUITests/Pods-MedchatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79AA5D48793FC7B91E446D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedchatTests/Pods-MedchatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F27A9B1A581E5C2C5446F2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medchat/Pods-Medchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F5D7D841087F01ED1B30964 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedchatTests/Pods-MedchatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE58E1A49CA0CB4E86E76428 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medchat/Pods-Medchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED368932EC0871D20106EA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBCED52F1CEF84F800F0581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB279C811D1443E6000196BE /* HelpTableViewController.swift in Sources */,
+				BB4E8CFE1D08E8C50030725E /* CoreDataStack.swift in Sources */,
+				BB279C8F1D14F944000196BE /* Contacts.swift in Sources */,
+				BB29ECCE1CF0C58600BA4870 /* MyPlanViewController.swift in Sources */,
+				BB279C831D1489D8000196BE /* MedsTableViewCell.swift in Sources */,
+				BB22086D1CF20806004A31FF /* MessageViewController.swift in Sources */,
+				BB4E8D121D0930E10030725E /* Content.swift in Sources */,
+				BB29ECD61CF106AA00BA4870 /* InboxViewController.swift in Sources */,
+				BBCED5391CEF84F800F0581B /* ChatViewController.swift in Sources */,
+				BB29ECD01CF0CB1900BA4870 /* ProfileViewController.swift in Sources */,
+				BB29ECDC1CF15DBF00BA4870 /* DataViewController.swift in Sources */,
+				BB4E8D031D08EA130030725E /* Model.xcdatamodeld in Sources */,
+				BB7BE0891D0CC45F00A3A300 /* NotificationsViewController.swift in Sources */,
+				BB279C891D14C1E9000196BE /* SWRevealViewController.m in Sources */,
+				BB7BE0871D0CAB2F00A3A300 /* PhoneViewController.swift in Sources */,
+				BB29ECD21CF0E27C00BA4870 /* TabBarViewController.swift in Sources */,
+				BBCED5371CEF84F800F0581B /* AppDelegate.swift in Sources */,
+				BB93E96F1D0788C50006C3B1 /* MedchatClient.swift in Sources */,
+				BB29ECD81CF11EE500BA4870 /* MyMessage.swift in Sources */,
+				BB0835A91D0DA4090081B1ED /* TextViewController.swift in Sources */,
+				BB7BE08B1D0CC7BA00A3A300 /* NotificationsCell.swift in Sources */,
+				BB93E96D1D077C840006C3B1 /* Constants.swift in Sources */,
+				BB4E8CFC1D08A8610030725E /* MessageCell.swift in Sources */,
+				BB4E8D111D0930E10030725E /* Content+CoreDataProperties.swift in Sources */,
+				BB963CD31D1872DA009FE24D /* CameraCaptureViewController.swift in Sources */,
+				BB279C851D1489ED000196BE /* TreatmentTableViewCell.swift in Sources */,
+				BB279C8B1D14F116000196BE /* ContactsTableViewController.swift in Sources */,
+				BB5E88D41D20619600548FC2 /* CameraDelegate.swift in Sources */,
+				BB43F9611D1256B600F0A2AD /* StandardTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED5431CEF84F800F0581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCED54C1CEF84F800F0581B /* MedchatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBCED54E1CEF84F800F0581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCED5571CEF84F800F0581B /* MedchatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBCED5491CEF84F800F0581B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBCED5321CEF84F800F0581B /* Medchat */;
+			targetProxy = BBCED5481CEF84F800F0581B /* PBXContainerItemProxy */;
+		};
+		BBCED5541CEF84F800F0581B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBCED5321CEF84F800F0581B /* Medchat */;
+			targetProxy = BBCED5531CEF84F800F0581B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBCED53A1CEF84F800F0581B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBCED53B1CEF84F800F0581B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBCED53F1CEF84F800F0581B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBCED5401CEF84F800F0581B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBCED5591CEF84F800F0581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBCED55A1CEF84F800F0581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBCED55C1CEF84F800F0581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1F0BFFD377953EF3ECA9D0 /* Pods-Medchat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Medchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.Medchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Medchat/Medchat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBCED55D1CEF84F800F0581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42CD4C5B05AFA8C5E683E58 /* Pods-Medchat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Medchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.Medchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Medchat/Medchat-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BBCED55F1CEF84F800F0581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6F21C75B80B8468B341EB7 /* Pods-MedchatTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MedchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medchat.app/Medchat";
+			};
+			name = Debug;
+		};
+		BBCED5601CEF84F800F0581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E1212811B1A5D397E8760A /* Pods-MedchatTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MedchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medchat.app/Medchat";
+			};
+			name = Release;
+		};
+		BBCED5621CEF84F800F0581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C2FD024E824CC691B3F119 /* Pods-MedchatUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MedchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MedchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Medchat;
+			};
+			name = Debug;
+		};
+		BBCED5631CEF84F800F0581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6473AF56848942B700FAFCD8 /* Pods-MedchatUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MedchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Home.MedchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Medchat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBCED52E1CEF84F800F0581B /* Build configuration list for PBXProject "Medchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCED5591CEF84F800F0581B /* Debug */,
+				BBCED55A1CEF84F800F0581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBCED55B1CEF84F800F0581B /* Build configuration list for PBXNativeTarget "Medchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCED55C1CEF84F800F0581B /* Debug */,
+				BBCED55D1CEF84F800F0581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBCED55E1CEF84F800F0581B /* Build configuration list for PBXNativeTarget "MedchatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCED55F1CEF84F800F0581B /* Debug */,
+				BBCED5601CEF84F800F0581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBCED5611CEF84F800F0581B /* Build configuration list for PBXNativeTarget "MedchatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCED5621CEF84F800F0581B /* Debug */,
+				BBCED5631CEF84F800F0581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB4E8D011D08EA130030725E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB4E8D0E1D092E8D0030725E /* Model2.xcdatamodel */,
+				BB4E8D021D08EA130030725E /* Model.xcdatamodel */,
+			);
+			currentVersion = BB4E8D0E1D092E8D0030725E /* Model2.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Medchat/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BBCED52B1CEF84F800F0581B /* Project object */;
+}
